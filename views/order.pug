@@ -1,0 +1,57 @@
+include header.pug
+
+div(class='wrap')
+    div(class='content')
+        header(class='site-header')
+            include site_header_order.pug
+
+        div(class='container')
+            div(class='row')
+                div(class='col col-md-12')
+                    h3(class="cart-header") Корзина
+                    div(id='cart-navigation')
+                div(class='col col-md-12')
+                    h3 Принять заказ
+                div(class='col col-md-6')
+                    form#bastion-order(action="")
+                        div(class='form-control')
+                            label(for='username') ФИО
+                            input(
+                                type='text',
+                                id='username',
+                                placeholder='Введите ваше имя',
+                            )
+                        div(class='form-control')
+                            label(for='phone') Номер телефона
+                            input(
+                                type='text',
+                                id='phone',
+                                placeholder='+375297843750',
+                            )
+                        div(class='form-control')
+                            label(for='email') Email
+                            input(
+                                type='text',
+                                id='email',
+                                placeholder='mail@example.com',
+                            )
+                        div(class='form-control')
+                            label(for='address') Домашний адрес
+                            textarea(
+                                id='address',
+                                placeholder='Место, куда нам доставить товар',
+                            )
+                        div(class='form-control')
+                            label(for='rule')
+                                input(
+                                    type='checkbox',
+                                    id='rule',
+                                    value='1'
+                                )
+                                span  Соглашение
+                        div(class='form-control text-right')
+                            button(class='button-primary', type='submit') Завершить заказ
+        //include navigation.pug
+
+    include footer.pug
+    script(src='js/order.js')

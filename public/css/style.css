@@ -1,0 +1,143 @@
+* {
+    font-family: sans-serif;
+}
+
+.wrap {
+    background: #fff;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.text-center {
+    text-align: center;
+    color: #212121;
+}
+
+.content {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.site-header {
+    height: auto;
+    padding: 1px 0;
+    background: #d7cacd;
+}
+
+.site-header h1 {
+    display: inline-block;
+    color: #4e4547;
+    font-style: italic;
+}
+
+.full-width {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* ------------card ------------------- */
+
+.card {
+    border: 1px solid #dedede;
+}
+
+.card-images {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    min-height: 150px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>NAV>>>>>>>>>>>> */
+
+.site-navigation {
+    font-style: italic;
+    font-size: large;
+    width: 300px;
+    min-height: 100vh;
+    position: fixed;
+    /* left: -300px; */
+    top: 0;
+    z-index: 999999;
+    padding: 10px;
+    transition: all ease 1s;
+    color: #212121;
+    background: #ffebee;
+    opacity: .8;
+}
+
+.order-button{
+    border-color: #212121;
+    background: #d2b9cd;
+    font-size: 16px;
+}
+
+.close-button-div {
+    text-align: right;
+}
+
+.close-navigation {
+    color: #212121;
+    border-color: #212121;
+    background: #d2b9cd;
+}
+
+.show-navigation {
+    position: relative;
+}
+
+ul.category-list {
+    list-style-type: disc;
+}
+
+ul.category-list a {
+    color: #424242;
+}
+
+.site-navigation a {
+    color: #424242;
+}
+
+.footer {
+    background: #d7cacd;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.main-style a{
+    color: #212121;
+}
+
+.add-to-cart {
+    background: #b79fb2;
+    border-color: #212121;
+    margin: fill;
+}
+
+.button-primary {
+    background: #d2c23b;
+    border-color: #212121;
+}
+
+.finish-order {
+    color: #212121;
+    font-style: italic;
+}
+
+.finish-cart {
+    color: #212121;
+    font-style: italic;
+    font-size: larger;
+}
+
+.cart-test {
+    border-color: #212121;
+    background: #212121;
+}
+
+
